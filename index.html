@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatório Inteligente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📋 Relatório Inteligente</h1>
+
+    <label for="texto">📝 Texto do Relatório:</label>
+    <textarea id="texto" placeholder="Digite ou cole seu relatório aqui..."></textarea>
+
+    <label for="foto">📷 Foto do Serviço:</label>
+    <input type="file" id="foto" accept="image/*" />
+    <img id="preview" alt="Pré-visualização da imagem" />
+
+    <button onclick="melhorarTexto()">Melhorar Texto com IA</button>
+
+    <div id="resultado" class="resultado-box" style="display:none;">
+      <h2>✅ Texto Melhorado:</h2>
+      <p id="textoMelhorado"></p>
+      <button onclick="copiarParaWhatsApp()">📲 Copiar e Abrir WhatsApp</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

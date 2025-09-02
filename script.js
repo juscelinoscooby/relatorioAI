@@ -1,5 +1,15 @@
 const URL_WEBAPP = "https://script.google.com/macros/s/AKfycbxj2mGHisAFzpGGPNRQN6r0gCh1FbzgkB_cxWXpaFdNKjpTC1tsE8Yj4Gu8iL1w3CbeXQ/exec";
 
+function doOptions(e) {
+  return ContentService.createTextOutput("")
+    .setMimeType(ContentService.MimeType.TEXT)
+    .setHeaders({
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type"
+    });
+}
+
 async function melhorarTexto() {
   const textoOriginal = document.getElementById("texto").value;
 

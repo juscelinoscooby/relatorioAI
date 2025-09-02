@@ -1,4 +1,4 @@
-const URL_WEBAPP = "https://script.google.com/macros/s/AKfycbxj2mGHisAFzpGGPNRQN6r0gCh1FbzgkB_cxWXpaFdNKjpTC1tsE8Yj4Gu8iL1w3CbeXQ/exec";
+const URL_WEBAPP = "https://script.google.com/macros/s/AKfycbyXgbYo2XNOeWlt4wrrdI3C3CpjKyu53gW672VytY4ZVEF7MN81ZxAjsSicDr6sdcn-EQ/exec";
 
 function doOptions(e) {
   return ContentService.createTextOutput("")

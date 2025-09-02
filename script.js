@@ -34,3 +34,23 @@ async function melhorarTexto() {
     document.getElementById("resultado").style.display = "block";
   }
 }
+
+// Função separada para copiar e abrir WhatsApp
+function copiarParaWhatsApp() {
+  const texto = document.getElementById("textoMelhorado").innerText;
+  const textoCodificado = encodeURIComponent(texto);
+  const linkWhatsApp = `https://wa.me/?text=${textoCodificado}`;
+
+  // Tenta copiar para área de transferência
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(texto).then(() => {
+      window.open(linkWhatsApp, "_blank");
+    }).catch(() => {
+      // Fallback para dispositivos que não suportam clipboard
+      window.open(linkWhatsApp, "_blank");
+    });
+  } else {
+    // Fallback direto
+    window.open(linkWhatsApp, "_blank");
+  }
+}

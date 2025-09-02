@@ -1,4 +1,4 @@
-const URL_WEBAPP = "https://script.google.com/macros/s/AKfycbxixZvitJULxtn6sMejGM-A1QU3wJ4obqq04RqmzkZPrf0P7zUzSJvHHy8Oohp--GB15g/exec";
+const URL_WEBAPP = "https://script.google.com/macros/s/AKfycbxj2mGHisAFzpGGPNRQN6r0gCh1FbzgkB_cxWXpaFdNKjpTC1tsE8Yj4Gu8iL1w3CbeXQ/exec";
 
 async function melhorarTexto() {
   const textoOriginal = document.getElementById("texto").value;

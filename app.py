@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-genai.configure(api_key="SUA_CHAVE_GEMINI")
+genai.configure(api_key="AIzaSyDxTeRjrAGkNXRn5G7zhTumOd24X2Y9k3s")
 
 @app.route('/melhorar-texto', methods=['POST'])
 def melhorar_texto():

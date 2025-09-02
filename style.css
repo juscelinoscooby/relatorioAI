@@ -1,5 +1,15 @@
 /* style.css */
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
 
+.logo-img {
+  width: 48px;
+  height: 48px;
+}
 body {
   margin: 0;
   padding: 0;
